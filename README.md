@@ -1,0 +1,2 @@
+# samrt_home_sysytem
+树莓派和Arduino人脸识别门禁，机智云平台环境监测控制
