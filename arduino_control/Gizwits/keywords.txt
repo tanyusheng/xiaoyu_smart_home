@@ -1,0 +1,24 @@
+#######################################
+# Syntax Coloring Map Servo
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Gizwits	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+write	KEYWORD2
+read	KEYWORD2
+begin	KEYWORD2
+wifiProcess	KEYWORD2
+statusUpload KEYWORD2
+hasBeenSet	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+commandProcessFlag LITERAL1

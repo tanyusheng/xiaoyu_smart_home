@@ -1,3 +1,6 @@
+"""
+如有疑问可以咨询公众号：小雨编程
+"""
 from aip import AipFace
 from picamera import PiCamera
 import urllib.request
@@ -7,6 +10,8 @@ import time
 import bluetooth
 
 from bluetooth_test import bt_open,servo_init,bt_close
+
+
 #百度人脸识别API账号信息
 APP_ID = '18332624'
 API_KEY = '2QoqxCzAsZGT9k5CMeaIlPBs'
@@ -62,29 +67,33 @@ def go_api(image):
         return 1
     if result['error_msg'] == 'pic not has face':
         print('检测不到人脸')
-        time.sleep(2)
+        time.sleep(3)
         return -1
     else:
         print(result['error_code']+' ' + result['error_code'])
         return 0
 #主函数
 if __name__ == '__main__':
+    servo_init()    #舵机复位，初始化一次就够了
     while True:
-        print('准备')
-        servo_init()
+        
+        print('准备开始，请面向摄像头 ^_^')
+
         if True:
             getimage()#拍照
-            img = transimage()#转换照片格式
-            res = go_api(img)#将转换了格式的图片上传到百度云
-            if(res == 1):#是人脸库中的人
+            img = transimage()  #转换照片格式
+            res = go_api(img)   #将转换了格式的图片上传到百度云
+            if(res == 1):   #是人脸库中的人
                 bt_open()
-                print("欢迎你，门已开")
+                print("欢迎回家，门已打开")
             elif(res == -1):
-                print("我没有看见你,我要关门了。。。")
-                bt_close()
+                print("我没有看见你,我要关门了")
+                time.sleep(3)
+                bt_close()    
             else:
                 print("关门")
                 bt_close()
-            print('稍等三秒进入下一个')
             time.sleep(3)
+            print('好了')
+            time.sleep(5)
 

@@ -20,7 +20,7 @@ def bt_open():#开门指令
     sock.send("2") 
     sock.close()  
 
-def bt_close():关门指令
+def bt_close():#关门指令
     bd_addr = "20:16:08:08:39:75" 
     port = 1
      
