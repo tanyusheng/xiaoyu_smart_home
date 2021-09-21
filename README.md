@@ -3,7 +3,8 @@
 # 项目简介
 
 ### 系统架构图
-![系统架构图](./img/architecture.png)
+![图片.png](https://cdn.jsdelivr.net/gh/tanyusheng/PicStored/blog/githubP_01.png)
+
 
 ### 硬件清单
 
@@ -33,18 +34,18 @@
 
 硬件采用了树莓派3B、Arduino UNO R3
 软件包含了人脸识别脚本、移动端APP。
-![](./img/粗略搭建效果.JPG)
-![](./img/模型效果1.JPG)
+![图片.png](https://cdn.jsdelivr.net/gh/tanyusheng/PicStored/blog/githubP_02.png)
+
 
 # 移动端
 ### APP效果图
-![](./img/app_screenshorts/1.jpg)
-![](./img/app_screenshorts/2.jpg)
+![图片.png](https://cdn.jsdelivr.net/gh/tanyusheng/PicStored/blog/githubP_03.png)
+
 ### 辅助教程
 [导入机智云Android开源项目的正确姿势](https://mp.weixin.qq.com/s/7bLe4kDZCb3LV1hVIsyTSw)
 # 人脸识别部分
 ### 1. 效果图
-![](./img/人脸识别门禁.png)
+![图片.png](https://cdn.jsdelivr.net/gh/tanyusheng/PicStored/blog/githubP_04.png)
 
 ### 2. 视频教程
 
@@ -57,7 +58,7 @@
 ### 相关技术参考文档
 [Arduino使用ESP8266连接机智云物联网平台](https://mp.weixin.qq.com/s/4BdCiPhoKTxQN9QlWtzMsg)
 ### 机智云数据点设置情况
+![图片.png](https://cdn.jsdelivr.net/gh/tanyusheng/PicStored/blog/githubP_05.png)
 
-![机智云节点设置](./img/node/node.png)
 # 作者
-![](./img/学习更多.gif)
+![图片.png](https://cdn.jsdelivr.net/gh/tanyusheng/PicStored/blog/githubP_06.png)
